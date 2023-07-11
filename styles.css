@@ -1,0 +1,25 @@
+body {
+  max-width: 720px;
+  margin: auto;
+  background-color: #f7f7f7;
+  color: #222222;
+  font-family: sans-serif;
+}
+
+nav {
+  word-spacing: 30px;
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 175%;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
+
+  nav {
+    word-spacing: 10px;
+  }
+}
