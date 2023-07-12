@@ -10,13 +10,37 @@ nav {
   word-spacing: 30px;
 }
 
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+tr {
+  text-align: left;
+}
+
+.active-page {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.post {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 720px) {
   body {
-    font-size: 175%;
+    font-size: 160%;
+    margin: 10px;
   }
 
   h1 {
-    font-size: 150%;
+    font-size: 160%;
   }
 
   nav {
