@@ -3,10 +3,11 @@
   <head>
     <title>Kyle Emrick's Site</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
   </head>
   <body>
     <h1>
@@ -20,14 +21,29 @@
     <hr>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo lacinia dui congue tempus. Nam volutpat, odio nec ornare gravida, mauris tortor malesuada lacus, sit amet tempor massa risus sed dolor. Aliquam felis enim, rutrum et aliquam sed, egestas sit amet neque. Pellentesque mattis suscipit rutrum. Donec a turpis eget mauris euismod tincidunt sed nec nunc. Cras pulvinar volutpat nisl ut sagittis. Suspendisse tempor turpis et ipsum consectetur porta. Mauris eu volutpat quam.
+      I'm a software developer in the Midwestern United States, and have been working in analytics and engineering for the past <span id="tenure"></span> years. Visit the ABOUT page if you want an overview of my development philosophy and the tools of the trade that I'm a fan of. For more detailed thoughts, opinions, and rants/raves, visit the BLOG.
     </p>
     <p>
-      Donec orci nibh, porta at dolor vel, blandit commodo nisi. Nam sit amet tempus sem, id dignissim libero. Aliquam nec dui gravida urna pharetra lacinia eget nec dui. Curabitur orci nulla, lobortis nec accumsan sed, rhoncus vitae enim. Quisque sagittis urna sed odio vestibulum, eget scelerisque risus gravida. Vestibulum mauris dolor, consectetur a leo et, hendrerit sollicitudin dui. Vestibulum eget ornare dolor, at interdum nisi. Donec rhoncus auctor arcu in pharetra. In eu sodales augue. Etiam libero libero, accumsan vitae imperdiet ac, convallis at urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      If you'd like to get in touch for any reason, you can email me at <strong><span id="contact"></span></strong>.
     </p>
-    <p>
-      Pellentesque in vehicula sem. Vivamus facilisis sapien ut aliquam finibus. Pellentesque cursus augue dolor, quis viverra nulla commodo vel. Vestibulum dignissim erat vel mollis feugiat. Duis sit amet gravida lectus. Fusce pharetra rutrum quam, fermentum fermentum enim viverra non. In vel vehicula enim, ut aliquet nibh.
-    </p>
+
+    <script>
+      function setTenure() {
+        const id = "tenure"
+        const curr_year = new Date().getFullYear();
+        const start_year = 2017;
+        const tenure = curr_year - start_year;
+        document.getElementById(id).innerHTML = tenure;
+      }
+      setTenure();
+
+      function setContact() {
+        const id = "contact"
+        const contact = String.fromCharCode(107,101,109,114,105,32,65,84,32,100,117,99,107,32,68,79,84,32,99,111,109);
+        document.getElementById(id).innerHTML = contact
+      }
+      setContact();
+    </script>
 
   </body>
 </html>

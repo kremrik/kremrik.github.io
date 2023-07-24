@@ -24,16 +24,19 @@ tr {
   text-align: left;
 }
 
+p {
+  line-height: 1.5;
+}
+
 a:hover, a:visited, a:link, a:active {
   text-decoration: none;
 }
 
-img {
-  width: 64px;
-  height: 64px;
+.tool {
+  width: 56px;
+  height: 56px;
   margin: 8px;
 }
-
 
 .active-page {
   font-weight: bold;
@@ -52,16 +55,20 @@ img {
   }
 
   h1 {
-    font-size: 130%;
+    font-size: 150%;
   }
 
   nav {
     word-spacing: 10px;
   }
 
-  img {
-    width: 120px;
-    height: 120px;
+  p {
+    line-height: 1.25;
+  }
+
+  .tool {
+    width: 104px;
+    height: 104px;
     margin: 4px
   }
 }
